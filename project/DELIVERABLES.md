@@ -1,37 +1,108 @@
 # Required Deliverables
 
-## D1 Discovery & Requirements
-Stakeholders, current/future process, user stories, requirements, assumptions and acceptance criteria. `docs/01-discovery/`
+## D1 — Discovery, Decision & Requirements Pack
+**Due:** Week 1  
+**Location:** `docs/01-discovery/`
 
-## D2 Data Governance & Source Assessment
-Source register, glossary, critical data elements, ownership, lineage, DQ rules and governance risks. `docs/02-data-governance/`
+Decision statement; stakeholder map; as-is/to-be process; at least 8 prioritised functional/user requirements; non-functional requirements; assumptions/dependencies; acceptance criteria mapped to requirements.
 
-## D3 Reproducible Ingestion & Transformation
-Acquisition, standardisation, transformations and execution instructions. `src/`, `sql/`, `docs/03-data-model/`
+**Acceptance:** every planned feature/analysis maps to an approved requirement.
 
-## D4 Data Quality & Analytical Model
-Profiling, validation, reconciliation, exceptions, grain and model. `docs/04-data-quality/`
+## D2 — Data Governance & Source Control Pack
+**Due:** Week 2  
+**Location:** `docs/02-data-governance/`, `data/SOURCE_REGISTER.md`
 
-## D5 KPI & Metric Catalogue
-Definitions, formulas, business purpose, source, owner, exclusions and limitations. `docs/05-kpi-catalogue/`
+Source inventory/frozen version; glossary; critical data elements; owners/stewards; lineage; DQ rules; reuse notes; governance risks.
 
-## D6 Core Analytical Assessment
-crime-demand trends, offence mix, force-area variation, persistence, emerging changes and resource-prioritisation indicators. `analysis/`, `docs/06-analysis/`
+**Acceptance:** every headline KPI traces to governed source fields.
 
-## D7 Decision / Prioritisation Framework
-Transparent evidence-to-decision logic with assumptions, thresholds and limitations. `docs/07-decision-framework/`
+## D3 — Reproducible Ingestion & Analytical Model
+**Due:** Week 3  
+**Location:** `src/`, `sql/`, `docs/03-data-model/`
 
-## D8 BI / Decision-Support Product
-Governed, accessible and decision-oriented product. `dashboard/`
+Load process; raw preservation; schema/type checks; standardisation; keys/grain; curated table(s); rerun instructions; exception handling.
 
-## D9 Assurance & UAT
-Reconciliations, tests, scenarios, issue log and acceptance evidence. `docs/08-assurance-uat/`
+**Acceptance:** same frozen input produces equivalent curated output on clean rerun.
 
-## D10 Technical & Operational Handover
-Architecture, setup, refresh/run, controls, failure points and maintenance. `docs/09-technical-handover/`
+## D4 — Data Quality, Reconciliation & Exceptions
+**Due:** Week 3  
+**Location:** `docs/04-data-quality/`, `tests/`
 
-## D11 Executive Briefing & Presentation
-Decision, evidence, recommendations, risks and next actions. `deliverables/`
+Row reconciliation; duplicate checks; missingness; accepted values/ranges; exception log; inclusion/exclusion rules.
 
-## D12 Contribution Record
-Actual responsibilities and linked GitHub evidence. `CONTRIBUTIONS.md`
+**Acceptance:** material exclusions are quantified and explained.
+
+## D5 — KPI & Metric Catalogue
+**Due:** Week 4  
+**Location:** `docs/05-kpi-catalogue/`
+
+Minimum metrics:
+- recorded offences by category;
+- period-on-period change;
+- multi-period growth/decline;
+- offence share of total;
+- area share of selected offence;
+- persistent elevated-trend flag;
+- largest positive/negative change;
+- data continuity/methodology flag;
+- missing/suppressed values;
+- selected denominator-based rate where a valid denominator is added;
+
+Each metric requires purpose, definition, formula, grain, source, exclusions, owner, refresh expectation and limitation.
+
+## D6 — Core Analytical Assessment I
+**Due:** Week 5  
+**Location:** `analysis/`, `docs/06-analysis/`
+
+- long-term offence trends;
+- persistent versus temporary changes;
+- offence mix;
+- area variation;
+
+Each major finding must state comparison basis, materiality and limitation.
+
+## D7 — Core Analytical Assessment II & Decision Framework
+**Due:** Week 6  
+**Location:** `docs/07-decision-framework/`
+
+- priority investigation matrix;
+- methodology/recording-change sensitivity;
+- volume-versus-growth comparison;
+- manual-review criteria;
+- explicit factors/thresholds;
+- rationale;
+- at least one sensitivity test;
+- manual-review triggers;
+- evidence insufficient for action.
+
+## D8 — BI / Decision-Support Product
+**Due:** Draft Week 6; final Week 7  
+**Location:** `dashboard/`
+
+Executive view; diagnostic drill-down; governed measures; source/reporting period; definitions/quality notes; filters; accessibility/readability; reproducible build/access instructions.
+
+**Acceptance:** at least five headline measures reconcile to curated data.
+
+## D9 — Assurance & UAT
+**Due:** Week 7  
+**Location:** `docs/08-assurance-uat/`
+
+Minimum 10 test scenarios; calculation/filter/edge-case checks; reconciliation; defect log; requirement-to-test traceability; UAT feedback; acceptance status.
+
+## D10 — Technical & Operational Handover
+**Due:** Week 8  
+**Location:** `docs/09-technical-handover/`
+
+Setup; run/refresh; architecture/data flow; transformations; metric logic; tests; troubleshooting; limitations; maintenance/change guidance.
+
+## D11 — Executive Briefing & Presentation
+**Due:** Week 8  
+**Location:** `deliverables/`
+
+Maximum two-page briefing plus 15–20 minute presentation covering decision, evidence, recommendation/investigation, limitations and next steps.
+
+## D12 — Contribution & Delivery Evidence
+**Due:** Final submission  
+**Location:** `CONTRIBUTIONS.md`
+
+Role, owned work packages, artefacts, linked issues/PRs/commits, review contribution and presentation contribution. Commit count alone is insufficient.

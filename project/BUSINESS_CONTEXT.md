@@ -1,31 +1,30 @@
 # Business Context
 
-## Simulated Client
+## Client
 **Confidential Community Safety Partnership**
 
-## Pressure
-The partnership has limited neighbourhood and prevention resources, but current reporting does not distinguish persistent demand, emerging crime categories, force-area variation and changes in recorded-crime patterns well enough to support targeted intervention.
+## Problem
+The partnership has limited neighbourhood and prevention resources, but current reporting does not distinguish persistent demand, emerging offence patterns, police-force-area variation and recording effects well enough to support targeted intervention.
 
-## Executive Decision
-**Which crime-demand patterns and areas should receive the earliest multi-agency investigation or prevention attention, and what evidence should be monitored before resources are reallocated?**
+## Decision Owner
+**Director of Community Safety**
 
 ## Stakeholders
-- **Director of Community Safety:** sponsor and decision owner.
-- **Operational/Programme Lead:** tests practical use.
-- **Data Owner/Steward:** owns definitions and quality challenge.
-- **Finance/Risk/Performance stakeholder:** tests materiality and prioritisation.
-- **Data & Analytics Lead:** owns technical quality.
-- **End users:** complete UAT.
+Community Safety Lead, Police Partnership Lead, Violence Reduction Lead, Local Authority Performance Lead, Safeguarding/Prevention Lead, Data Governance Lead, Insight Lead
 
-## Delivery Roles
-| Role | Expected contribution |
+## Decision
+**Which crime-demand patterns and areas should receive the earliest multi-agency investigation or prevention attention, and what evidence should be monitored before resources are reallocated?**
+
+## Role Responsibilities
+| Role | Required contribution |
 |---|---|
-| Business Analyst | Define prevention/resource decisions, stakeholder needs and acceptance criteria. |
-| Data Governance Analyst | Govern offence definitions, geographic reference data, lineage and quality. |
-| Data Engineer | Prepare reproducible extraction/transformation from Home Office tables. |
-| Community Safety/Data Analyst | Analyse demand, offence mix, trends and persistent variation. |
-| BI Developer | Create operational and executive community-safety decision support. |
-| GIS/Spatial Analyst | Provide proportionate geographic interpretation where appropriate. |
-| Risk/Assurance Analyst | Challenge interpretation, thresholds and unintended consequences. |
+| Business Analyst | Define partnership decision, stakeholder needs, prevention use cases and acceptance criteria. |
+| Data Governance Analyst | Govern offence taxonomy, geography, time-period definitions, lineage and DQ rules. |
+| Data Engineer | Prepare reproducible extraction and longitudinal analytical model from Home Office tables. |
+| Community Safety/Data Analyst | Own trend, persistence, offence-mix and area comparison analysis. |
+| BI Developer | Build partnership-level executive and diagnostic views. |
+| GIS/Spatial Analyst | Provide cautious area mapping where source geography supports it. |
+| Risk/Assurance Analyst | Challenge denominators, labels, thresholds and unintended consequences. |
 
-The project succeeds when it leaves behind a trusted decision process, not merely a visualisation.
+## Evidence Chain
+**Requirement → governed definition → transformation → quality control → metric/analysis → decision insight → recommendation → UAT**
